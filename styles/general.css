@@ -49,6 +49,7 @@
      position: sticky;
      top: 0;
      z-index: 1000;
+    
 }
     
 
@@ -95,14 +96,14 @@
     height: 20vh;
 
 }
-.redes{.pie{
+.pie{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 10px;
     font-family:"Rancho", cursive;
     justify-content: space-evenly;  
 }
-
+.redes{
     justify-content: space-around;
     font-size: 2.5rem;
     text-align: center;
@@ -120,7 +121,7 @@
     text-decoration: none !important; 
     color:inherit !important;
 } 
-otros a:hover {
+.otros a:hover {
     text-decoration: underline;
 }  
 .lista{

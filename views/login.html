@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/af77e9a3e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header class="stiky-header">
+            <div class="titulo">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m397-115-99-184-184-99 71-70 145 25 102-102-317-135 84-86 385 68 124-124q23-23 57-23t57 23q23 23 23 56.5T822-709L697-584l68 384-85 85-136-317-102 102 26 144-71 71Z"/></svg> BC-Viajes</h1>
+            </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));">
+          
+
+    <div class="container-fluid">
+    
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
+        </li>      
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="suscribirse.html">Suscribirse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros">Acerca de</a>
+        </li>
+        </ul>
+              
+    </div>
+    
+  </div>
+  
+</nav>
+
+</header>   
+
+<body>
+   <!--form login--> 
+<div class="login">    
+<form class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 ">
+       <div class="text-center mb-4">
+           <h4 class="fw-bold mb-2">Bienvenido</h4>
+           <p class="text-muted mb-0">
+               Acceder a su cuenta
+           </p>
+       </div>
+       <div class="mb-3">
+           <label for="loginEmail" class="form-label">
+               Email 
+           </label>
+           <input type="email"
+                  class="form-control form-control-lg rounded-3"
+                  id="loginEmail"
+                  placeholder="name@example.com">
+       </div>
+       <div class="mb-3">
+           <div class="d-flex justify-content-between">
+               <label for="loginPassword" class="form-label">
+                   Password
+               </label>
+               <div class="text-end mb-3">
+              <a href="#" class="text-decoration-none small text-primary" data-bs-toggle="modal" data-bs-target="#modalRecuperarPassword">
+               ¿Olvidaste tu contraseña?
+    
+</div>
+           </div>
+           <input type="password"
+                  class="form-control form-control-lg rounded-3"
+                  id="loginPassword"
+                  placeholder="••••••••">
+       </div>
+       <div class="form-check mb-4">
+           <input class="form-check-input"
+                  type="checkbox"
+                  id="rememberMe">
+           <label class="form-check-label" for="rememberMe">
+               recuerdame
+           </label>
+       </div>
+       <button type="submit"
+               class="btn btn-info btn-lg w-100 rounded-3">
+           Acceder
+       </button>
+       <button type="submit"
+               class="btn btn-info btn-lg w-100 rounded-3 my-2">
+                <i class="fab fa-google"></i>
+       </button>
+       <button type="submit"
+               class="btn btn-info btn-lg w-100 rounded-3">
+                <i class="fab fa-facebook"></i>
+       </button>
+       <div class="text-center mt-4">
+           <span class="text-muted small"></span>
+           <a href="#" class="small text-decoration-none">
+               
+           </a>
+       </div>
+   </form>">
+   </div>
+   
+    <!---footer-->
+<!-- Modal Recuperar Contraseña -->
+<div class="modal fade" id="modalRecuperarPassword" tabindex="-1" aria-labelledby="modalRecuperarPasswordLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <!-- Encabezado del modal con el color de BC-Viajes -->
+      <div class="modal-header" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(7, 59, 145, 0.9)); color: white;">
+        <h5 class="modal-title" id="modalRecuperarPasswordLabel">
+            <i class="fas fa-key me-2"></i>Recuperar Contraseña
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <p class="text-muted mb-3">
+            No te preocupes. Ingresa tu correo electrónico y te enviaremos un enlace seguro para restablecer tu contraseña.
+        </p>
+        <form id="formRecuperarPassword">
+          <div class="mb-3">
+            <label for="emailRecuperar" class="form-label fw-bold">Correo electrónico</label>
+            <input type="email" class="form-control" id="emailRecuperar" placeholder="tu@email.com" required>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Pie del modal con los botones -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" form="formRecuperarPassword" class="btn btn-primary">Enviar enlace</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>
