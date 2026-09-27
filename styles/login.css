@@ -1,7 +1,31 @@
-.login{
-    width: 500px;
-    height: 300px;
+*/ normalizamos  la pagina */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+@media(max-width: 480px){
+    .titulo{
+        width: 80px !important;
+        height: 80px !important;
+        font-size: 2.2em !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+      
+        font-family:"Rancho", cursive;
+        border-radius:50%;
+        border: 2px solid   rgba(44, 50, 59, 0.8);
+        color: rgba(44, 50, 59, 0.8);
+        line-height: 1.2;      
+        list-style: none !important;
+        text-decoration: none !important;
+    }
 }
 
 
@@ -9,11 +33,49 @@
 
 
 
+
+
+.titulo{
+    width: 10%;
+    font-family:"Rancho", cursive;
+    border-radius:50%;
+    border: 2px solid   rgba(44, 50, 59, 0.8);
+    color: rgba(44, 50, 59, 0.8);
+    text-align:center;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+.stiky-header{
+    background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
+    font-family:"Rancho", cursive;
+    font-size: 1.5rem;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+    
+}
+    
+
+
+
+   
+.container-fluid{
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+   
+}
+.carousel-item img{
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
 .contenedor { 
     min-height: 300px;
     /* MISMO DEGRADADO QUE EL HEADER */
     background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
-    color: rgba(44, 50, 59, 0.8);
+    color: #ffffff; /* Texto blanco para que se lea sobre el azul */
     border-radius: 15px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -26,15 +88,11 @@
     width: 100%;
     gap: 10px;
     font-family:"Rancho", cursive;
-    color: rgba(44, 50, 59, 0.8);
-
     
 }
 .contiene{
     background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
     width: 100%;
-
-    
     
     border-radius: 10px;
   
@@ -46,15 +104,13 @@
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 10px;
     font-family:"Rancho", cursive;
-    justify-content: space-evenly; 
-     
+    justify-content: space-evenly;  
 }
 .redes{
     justify-content: space-around;
     font-size: 2.5rem;
     text-align: center;
      margin: 15%;
-     color: rgba(44, 50, 59, 0.8);
 }   
 .otros{
     font-size : 1.5rem;
@@ -67,14 +123,12 @@
 .otros a{
     text-decoration: none !important; 
     color:inherit !important;
-
 } 
 .otros a:hover {
     text-decoration: underline;
 }  
 .lista{
     list-style: none !important;
-    color: rgba(44, 50, 59, 0.8);
-    margin: 0;
-    padding: 0;    
+  margin: 0;
+  padding: 0;    
 }
