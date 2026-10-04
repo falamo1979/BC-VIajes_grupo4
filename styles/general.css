@@ -8,22 +8,15 @@
 
 }
 @media(max-width: 480px){
-    .titulo{
-        width: 80px !important;
-        height: 80px !important;
-        font-size: 2.2em !important;
-        text-align: center;
+    .img{   
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-      
+        border-radius: 50% !important;
+        object-fit: cover;
         font-family:"Rancho", cursive;
-        border-radius:50%;
+        border-radius:50% !important; ;
         border: 2px solid   rgba(44, 50, 59, 0.8);
         color: rgba(44, 50, 59, 0.8);
-        line-height: 1.2;      
-    
+       
     }
 }
 
@@ -32,15 +25,13 @@
 
 
 
-
-
-.titulo{
-    width: 10%;
-    font-family:"Rancho", cursive;
-    border-radius:50%;
-    border: 2px solid   rgba(44, 50, 59, 0.8);
-    color: rgba(44, 50, 59, 0.8);
-    text-align:left;
+.a{
+    width: 15%;
+    height: 15%;
+    display: flex;
+    border-radius: 50% !important;
+    margin-top:-1% !important;
+    object-fit: cover;    
 }
 .stiky-header{
     background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
@@ -49,6 +40,7 @@
      position: sticky;
      top: 0;
      z-index: 1000;
+     
     
 }
     
@@ -93,8 +85,17 @@
     
     border-radius: 10px;
   
-    height: 20vh;
-
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    margin-top:-1% !important;
+    object-fit: cover;    
 }
 .pie{
     display: grid;
