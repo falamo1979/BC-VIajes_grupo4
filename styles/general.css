@@ -95,7 +95,8 @@
     display: flex;
     border-radius: 50%;
     margin-top:-1% !important;
-    object-fit: cover;    
+    object-fit: cover;   
+    margin: auto; 
 }
 .pie{
     display: grid;
