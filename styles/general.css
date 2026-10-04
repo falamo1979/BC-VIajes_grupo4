@@ -8,17 +8,25 @@
 
 }
 @media(max-width: 480px){
-    .img{   
-        display: flex;
-        border-radius: 50% !important;
-        object-fit: cover;
-        font-family:"Rancho", cursive;
-        border-radius:50% !important; ;
-        border: 2px solid   rgba(44, 50, 59, 0.8);
-        color: rgba(44, 50, 59, 0.8);
+    .logo{
        
+         width: 100%;
+         height: 100%;
+         display: flex;
+         border-radius: 50%;
+         
+         object-fit: cover;   
+         margin: auto; 
+       
+
+               
+    
     }
-}
+
+      
+        
+    }
+
 
 
 
@@ -90,13 +98,13 @@
     flex-direction: column;
 }
 .logo{
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 20%;
     display: flex;
-    border-radius: 50%;
-    margin-top:-1% !important;
-    object-fit: cover;   
-    margin: auto; 
+    border-radius: 50% !important;
+    object-fit: cover;  
+    margin-top: 8%;
+    margin-left: 40%; 
 }
 .pie{
     display: grid;
