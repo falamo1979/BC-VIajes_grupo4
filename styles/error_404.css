@@ -1,194 +1,101 @@
-.escena-404 {
-  background: #000;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  font-family: 'Anton', sans-serif;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
+/* ============================================
+   RESET BÁSICO
+============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-div {
-  transform-style: preserve-3d;
+/* ============================================
+   CUERPO DE LA PÁGINA
+============================================ */
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e0eaff 100%);
+    color: #333;
+    text-align: center;
+    padding: 20px;
 }
 
-/* ========================================= */
-/* RAIL Y STAMP (Con el bucle @for expandido) */
-/* ========================================= */
-.rail {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotateX(-30deg) rotateY(-30deg);
+.error-container {
+    max-width: 600px;
+    padding: 40px 20px;
 }
 
-.rail .stamp {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(20, 20, 20, 1);
-  color: #ff1205;
-  font-size: 7rem;
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-/* Expansión manual del bucle @for de 1 a 20 */
-.rail .stamp:nth-child(1) { animation: stampSlide 40000ms -2300ms linear infinite; }
-.rail .stamp:nth-child(2) { animation: stampSlide 40000ms -4300ms linear infinite; }
-.rail .stamp:nth-child(3) { animation: stampSlide 40000ms -6300ms linear infinite; }
-.rail .stamp:nth-child(4) { animation: stampSlide 40000ms -8300ms linear infinite; }
-.rail .stamp:nth-child(5) { animation: stampSlide 40000ms -10300ms linear infinite; }
-.rail .stamp:nth-child(6) { animation: stampSlide 40000ms -12300ms linear infinite; }
-.rail .stamp:nth-child(7) { animation: stampSlide 40000ms -14300ms linear infinite; }
-.rail .stamp:nth-child(8) { animation: stampSlide 40000ms -16300ms linear infinite; }
-.rail .stamp:nth-child(9) { animation: stampSlide 40000ms -18300ms linear infinite; }
-.rail .stamp:nth-child(10) { animation: stampSlide 40000ms -20300ms linear infinite; }
-.rail .stamp:nth-child(11) { animation: stampSlide 40000ms -22300ms linear infinite; }
-.rail .stamp:nth-child(12) { animation: stampSlide 40000ms -24300ms linear infinite; }
-.rail .stamp:nth-child(13) { animation: stampSlide 40000ms -26300ms linear infinite; }
-.rail .stamp:nth-child(14) { animation: stampSlide 40000ms -28300ms linear infinite; }
-.rail .stamp:nth-child(15) { animation: stampSlide 40000ms -30300ms linear infinite; }
-.rail .stamp:nth-child(16) { animation: stampSlide 40000ms -32300ms linear infinite; }
-.rail .stamp:nth-child(17) { animation: stampSlide 40000ms -34300ms linear infinite; }
-.rail .stamp:nth-child(18) { animation: stampSlide 40000ms -36300ms linear infinite; }
-.rail .stamp:nth-child(19) { animation: stampSlide 40000ms -38300ms linear infinite; }
-.rail .stamp:nth-child(20) { animation: stampSlide 40000ms -40300ms linear infinite; }
-
-/* ========================================= */
-/* WORLD, BOX Y WALL */
-/* ========================================= */
-.world {
-  transform: rotateX(-30deg) rotateY(-30deg);
+.error-code {
+    font-size: 10rem;
+    font-weight: 900;
+    color: #0a59da;
+    line-height: 1;
+    text-shadow: 4px 4px 0px rgba(10, 89, 218, 0.15);
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
 }
 
-.world .forward {
-  position: absolute;
-  animation: slide 2000ms linear infinite;
+.error-title {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-.world .box {
-  width: 200px;
-  height: 200px;
-  transform-origin: 100% 100%;
-  animation: roll 2000ms cubic-bezier(1.000, 0.010, 1.000, 1.000) infinite;
+.error-message {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-.world .box .wall {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: rgba(10, 10, 10, 0.8);
-  border: 1px solid rgba(250, 250, 250, 1);
-  box-sizing: border-box;
+.btn-home {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #0a59da;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(10, 89, 218, 0.3);
 }
 
-.world .box .wall::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 7rem;
+.btn-home:hover {
+    background-color: #0846b0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10, 89, 218, 0.4);
 }
 
-.world .box .wall:nth-child(1) {
-  transform: translateZ(100px);
+.btn-home:active {
+    transform: translateY(0);
 }
 
-.world .box .wall:nth-child(2) {
-  transform: rotateX(180deg) translateZ(100px);
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-15px); 
+    }
 }
 
-.world .box .wall:nth-child(3) {
-  transform: rotateX(90deg) translateZ(100px);
-}
-
-.world .box .wall:nth-child(3)::before {
-  transform: rotateX(180deg) rotateZ(90deg) translateZ(-1px);
-  animation: zeroFour 4000ms -2000ms linear infinite;
-}
-
-.world .box .wall:nth-child(4) {
-  transform: rotateX(-90deg) translateZ(100px);
-}
-
-.world .box .wall:nth-child(4)::before {
-  transform: rotateX(180deg) rotateZ(-90deg) translateZ(-1px);
-  animation: zeroFour 4000ms -2000ms linear infinite;
-}
-
-.world .box .wall:nth-child(5) {
-  transform: rotateY(90deg) translateZ(100px);
-}
-
-.world .box .wall:nth-child(5)::before {
-  transform: rotateX(180deg) translateZ(-1px);
-  animation: zeroFour 4000ms linear infinite;
-}
-
-.world .box .wall:nth-child(6) {
-  transform: rotateY(-90deg) translateZ(100px);
-}
-
-.world .box .wall:nth-child(6)::before {
-  transform: rotateX(180deg) rotateZ(180deg) translateZ(-1px);
-  animation: zeroFour 4000ms linear infinite;
-}
-
-/* ========================================= */
-/* ANIMACIONES (KEYFRAMES) */
-/* ========================================= */
-@keyframes stampSlide {
-  0% {
-    transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(130px);
-  }
-  100% {
-    /* 130px - (200px * 20) = -3870px */
-    transform: rotateX(90deg) rotateZ(-90deg) translateZ(-200px) translateY(-3870px);
-  }
-}
-
-@keyframes zeroFour {
-  0% {
-    content: '4';
-  }
-  100% {
-    content: '0';
-  }
-}
-
-@keyframes roll {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  85% {
-    transform: rotateZ(90deg);
-  }
-  87% {
-    transform: rotateZ(88deg);
-  }
-  90% {
-    transform: rotateZ(90deg);
-  }
-  100% {
-    transform: rotateZ(90deg);
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200px);
-  }
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 6rem;
+    }
+    .error-title {
+        font-size: 1.5rem;
+    }
+    .error-message {
+        font-size: 1rem;
+    }
 }
