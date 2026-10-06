@@ -116,7 +116,8 @@
                 <label for="password" class="form-label">Contraseña</label>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                    <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                    <input type="password" class="form-control" id="password" placeholder="••••••••" required pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"title="Debe tener al menos 8 caracteres, una mayúscula, un número y un carácter especial (@$!%*?&)"  > 
+                    
                 </div>
             </div>
 
