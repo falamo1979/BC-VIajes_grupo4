@@ -51,10 +51,21 @@
      z-index: 1000;
     
 }
-    
 
+/* ESTILIZACION DE CARDS COL 1 */
 
+.carta-bc{
 
+transition: all 0.4s;
+}
+
+.carta-bc:hover{
+    transform: scale(1.03);
+}
+
+.carta-title{
+color: rgba(59, 130, 246, 0.8);
+}
    
 .container-fluid{
     font-size: 1.5rem;
