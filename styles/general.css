@@ -77,6 +77,10 @@ color: rgba(59, 130, 246, 0.8);
     object-fit: cover;
 }
 
+.page-link:hover{
+    background-color: rgba(59, 130, 246, 0.8);
+    color: #ffffff;
+}
 
 
 .contenedor { 
