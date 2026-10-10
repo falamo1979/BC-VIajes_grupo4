@@ -31,7 +31,9 @@
 
 
 
-
+body{
+    background: url(/images/catedral.jpg) no-repeat center center / cover fixed;
+}
 
 
 .titulo{
@@ -50,6 +52,21 @@
      top: 0;
      z-index: 1000;
     
+}
+
+#carouselExampleCaptions {
+height: calc(100vh - 70px);
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 /* ESTILIZACION DE CARDS COL 1 */
@@ -80,6 +97,15 @@ color: rgba(59, 130, 246, 0.8);
 .page-link:hover{
     background-color: rgba(59, 130, 246, 0.8);
     color: #ffffff;
+}
+
+/* ESTILOS PARA COL 2 */
+
+.publicidad img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
 
