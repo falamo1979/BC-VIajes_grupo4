@@ -1,31 +1,4 @@
-/* normalizamos  la pagina */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-
-}
-@media(max-width: 480px){
-    .titulo{
-        width: 80px !important;
-        height: 80px !important;
-        font-size: 2.2em !important;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-      
-        font-family:"Rancho", cursive;
-        border-radius:50%;
-        border: 2px solid   rgba(44, 50, 59, 0.8);
-        color: rgba(44, 50, 59, 0.8);
-        line-height: 1.2;      
-    
-    }
-}
 
 
 
