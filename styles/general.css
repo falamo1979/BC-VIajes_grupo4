@@ -69,7 +69,25 @@ height: 100%;
 object-fit: cover;
 }
 
-/* ESTILIZACION DE CARDS COL 1 */
+.titulo-slider{
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+    right: 40%;
+    color: rgb(86, 131, 255);
+}
+
+.text-slider{
+    font-size: 30px;
+    position: relative;
+    right: 40%;
+    bottom: 30px;
+    color: rgb(86, 131, 255)
+}
+
+
+
+/* ESTILIZACION DE COL 1/2 */
 
 .carta-bc{
 
@@ -99,7 +117,9 @@ color: rgba(59, 130, 246, 0.8);
     color: #ffffff;
 }
 
-/* ESTILOS PARA COL 2 */
+
+
+/* ESTILIZACION PARA COL 2/2 */
 
 .publicidad img{
     display: block;
@@ -108,6 +128,20 @@ color: rgba(59, 130, 246, 0.8);
     border-radius: 6px;
 }
 
+.i-cat{
+    color: rgba(10, 89, 218, 0.8)
+}
+
+/* ESTILIZACION PARA COLUMNA 3/4 */
+
+.enviar{
+    height: 50px;
+    font-size: 23px;
+}
+
+.bio{
+    height: 50px;
+}
 
 .contenedor { 
     min-height: 300px;
