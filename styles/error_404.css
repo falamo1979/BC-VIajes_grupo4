@@ -1,0 +1,101 @@
+/* ============================================
+   RESET BÁSICO
+============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================================
+   CUERPO DE LA PÁGINA
+============================================ */
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e0eaff 100%);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-container {
+    max-width: 600px;
+    padding: 40px 20px;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.error-code {
+    font-size: 10rem;
+    font-weight: 900;
+    color: #0a59da;
+    line-height: 1;
+    text-shadow: 4px 4px 0px rgba(10, 89, 218, 0.15);
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.error-title {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.error-message {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #0a59da;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(10, 89, 218, 0.3);
+}
+
+.btn-home:hover {
+    background-color: #0846b0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10, 89, 218, 0.4);
+}
+
+.btn-home:active {
+    transform: translateY(0);
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-15px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 6rem;
+    }
+    .error-title {
+        font-size: 1.5rem;
+    }
+    .error-message {
+        font-size: 1rem;
+    }
+}
