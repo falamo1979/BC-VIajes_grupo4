@@ -1,0 +1,160 @@
+
+
+
+.stiky-header{
+    background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
+    font-family:"Rancho", cursive;
+    font-size: 1.5rem;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+    
+}
+
+
+
+.bg-custom-gradient {
+    background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
+    min-height: 100vh;
+}
+
+/* Estilo para el logo  */
+
+.encabezado-viajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+     
+    font-family:"Rancho", cursive;
+    border-radius:50%;
+    border: 2px solid   rgba(44, 50, 59, 0.8);
+    color: rgba(44, 50, 59, 0.8);
+  
+}
+
+
+.encabezado-viajes .project-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.encabezado-viajes h1 {
+    font-size: 22px;
+    color: black;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+/*  imágenes circulares  */
+.member-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*  efecto hover */
+.member-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+   
+ 
+  
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(20px);
+       font-family:"Rancho", cursive;
+    border-radius:50%;
+    border: 2px solid   rgba(44, 50, 59, 0.8);
+    color: rgba(44, 50, 59, 0.8);
+}
+
+/* Estilo para la foto grupal */
+.group-img {
+    max-height: 700px;      /*  altura */
+    object-fit: cover;      /*  no se deforme */
+    width: 100%;            /* Ocupa todo el ancho  */
+    transition: transform 0.3s ease;
+       font-family:"Rancho", cursive;
+    border-radius:50%;
+    border: 2px solid   rgba(44, 50, 59, 0.8);
+    color: rgba(44, 50, 59, 0.8);
+}
+
+.group-img:hover {
+    transform: scale(1.01); /* Sutil efecto de zoom  */
+}
+/* FOOTER */
+.pie {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Rancho", cursive;
+}
+
+/* CONTENEDORES */
+.contiene {
+    background: linear-gradient(
+        135deg,
+        rgba(132, 177, 249, 0.8),
+        rgba(59, 130, 246, 0.8),
+        rgba(10, 89, 218, 0.8),
+        rgba(7, 59, 145, 0.8)
+    );
+
+    width: 100%;
+    min-width: 0;
+    min-height: 120px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* REDES SOCIALES */
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ENLACES */
+.otros {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.otros a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.otros a:hover {
+    text-decoration: underline;
+}
+
+/* LISTA */
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
