@@ -1,19 +1,47 @@
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+@media(max-width: 480px){
+    .logo{
+       
+         width: 100%;
+         height: 100%;
+         display: flex;
+         border-radius: 50%;
+         
+         object-fit: cover;   
+         margin: auto; 
+       
+
+               
+    
+    }
+
+      
+        
+    }
 
 
 
 
 
+body{
+    background: url(/images/catedral.jpg) no-repeat center center / cover fixed;
+}
 
-
-.titulo{
-    width: 10%;
-    font-family:"Rancho", cursive;
-    border-radius:50%;
-    border: 2px solid   rgba(44, 50, 59, 0.8);
-    color: rgba(44, 50, 59, 0.8);
-    text-align:left;
+.a{
+    width: 15%;
+    height: 15%;
+    display: flex;
+    border-radius: 50% !important;
+    margin-top:-1% !important;
+    object-fit: cover;    
 }
 .stiky-header{
     background: linear-gradient(135deg, rgba(132, 177, 249, 0.8), rgba(59, 130, 246, 0.8), rgba(10, 89, 218, 0.8), rgba(7, 59, 145, 0.8));
@@ -22,12 +50,57 @@
      position: sticky;
      top: 0;
      z-index: 1000;
+     
     
 }
-    
+
+#carouselExampleCaptions {
+height: calc(100vh - 70px);
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.titulo-slider{
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+    right: 40%;
+    color: rgb(86, 131, 255);
+}
+
+.text-slider{
+    font-size: 30px;
+    position: relative;
+    right: 40%;
+    bottom: 30px;
+    color: rgb(86, 131, 255)
+}
 
 
 
+/* ESTILIZACION DE COL 1/2 */
+
+.carta-bc{
+
+transition: all 0.4s;
+}
+
+.carta-bc:hover{
+    transform: scale(1.03);
+}
+
+.carta-title{
+color: rgba(59, 130, 246, 0.8);
+}
    
 .container-fluid{
     font-size: 1.5rem;
@@ -39,7 +112,36 @@
     object-fit: cover;
 }
 
+.page-link:hover{
+    background-color: rgba(59, 130, 246, 0.8);
+    color: #ffffff;
+}
 
+
+
+/* ESTILIZACION PARA COL 2/2 */
+
+.publicidad img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.i-cat{
+    color: rgba(10, 89, 218, 0.8)
+}
+
+/* ESTILIZACION PARA COLUMNA 3/4 */
+
+.enviar{
+    height: 50px;
+    font-size: 23px;
+}
+
+.bio{
+    height: 50px;
+}
 
 .contenedor { 
     min-height: 300px;
@@ -66,8 +168,18 @@
     
     border-radius: 10px;
   
-    height: 20vh;
-
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    border-radius: 50% !important;
+    object-fit: cover;  
+    margin-top: 8%;
+    margin-left: 40%; 
 }
 .pie{
     display: grid;
