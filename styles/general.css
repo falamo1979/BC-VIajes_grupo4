@@ -31,7 +31,9 @@
 
 
 
-
+body{
+    background: url(/images/catedral.jpg) no-repeat center center / cover fixed;
+}
 
 
 .titulo{
@@ -51,10 +53,54 @@
      z-index: 1000;
     
 }
-    
+
+#carouselExampleCaptions {
+height: calc(100vh - 70px);
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.titulo-slider{
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+    right: 40%;
+    color: rgb(86, 131, 255);
+}
+
+.text-slider{
+    font-size: 30px;
+    position: relative;
+    right: 40%;
+    bottom: 30px;
+    color: rgb(86, 131, 255)
+}
 
 
 
+/* ESTILIZACION DE COL 1/2 */
+
+.carta-bc{
+
+transition: all 0.4s;
+}
+
+.carta-bc:hover{
+    transform: scale(1.03);
+}
+
+.carta-title{
+color: rgba(59, 130, 246, 0.8);
+}
    
 .container-fluid{
     font-size: 1.5rem;
@@ -66,7 +112,36 @@
     object-fit: cover;
 }
 
+.page-link:hover{
+    background-color: rgba(59, 130, 246, 0.8);
+    color: #ffffff;
+}
 
+
+
+/* ESTILIZACION PARA COL 2/2 */
+
+.publicidad img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.i-cat{
+    color: rgba(10, 89, 218, 0.8)
+}
+
+/* ESTILIZACION PARA COLUMNA 3/4 */
+
+.enviar{
+    height: 50px;
+    font-size: 23px;
+}
+
+.bio{
+    height: 50px;
+}
 
 .contenedor { 
     min-height: 300px;
